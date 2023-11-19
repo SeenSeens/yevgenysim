@@ -1,3 +1,3 @@
-Theme bán hàng woocommerce
-Parent Theme Storefont
-Tích hợp angularjs
+#Theme bán hàng woocommerce
+#Parent Theme Storefont
+#Tích hợp angularjs
