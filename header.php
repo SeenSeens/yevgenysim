@@ -19,6 +19,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php require_once get_theme_file_path( '/templates/search.php' ); ?>
+<?php require_once get_theme_file_path( '/templates/store.php' ); ?>
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
     <div class="container">
@@ -64,9 +65,9 @@
                 </li>
                 <li class="nav-item ms-lg-n4">
                     <a class="nav-link" data-bs-toggle="offcanvas" href="#modalShoppingCart">
-                    <span data-cart-items="2">
-                    <i class="fe fe-shopping-cart"></i>
-                    </span>
+                        <span data-cart-items="2">
+                            <i class="fe fe-shopping-cart"></i>
+                        </span>
                     </a>
                 </li>
             </ul>

@@ -17,3 +17,16 @@ img {
 .entry-title a {
     color: #000000;
 }
+.page-numbers {
+    font-size: .9375rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+    color: inherit;
+    display: block;
+    position: relative;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.current {
+    color: #0D6EFD;
+}

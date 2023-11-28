@@ -90,6 +90,7 @@ if ( woocommerce_product_loop() ) {
 	 *
 	 * @hooked woocommerce_pagination - 10
 	 */
+    pagination();
 	do_action( 'woocommerce_after_shop_loop' );
 } else {
 	/**

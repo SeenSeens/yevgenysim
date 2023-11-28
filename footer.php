@@ -2,16 +2,24 @@
   <footer class="bg-dark bg-cover" style="background-image: url(<?= site_url('/wp-content/themes/storefront-child/assets/img/patterns/pattern-2.svg') ?>)">
     <div class="py-12 border-bottom border-gray-700">
         <div class="container">
-          <?php
-          /**
-           * Functions hooked in to storefront_footer action
-           *
-           * @hooked storefront_footer_widgets - 10
-           * @hooked storefront_credit         - 20
-           */
-          //do_action( 'storefront_footer' );
-          ?>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                    <!-- Heading -->
+                    <h5 class="mb-7 text-center text-white">Want style Ideas and Treats?</h5>
+                    <!-- Form -->
+                    <?php echo do_shortcode('[contact-form-7 id="369568e" title="Form liên hệ footer"]') ?>
+                </div>
+            </div>
             <div class="row">
+                <?php
+                /**
+                 * Functions hooked in to storefront_footer action
+                 *
+                 * @hooked storefront_footer_widgets - 10
+                 * @hooked storefront_credit         - 20
+                 */
+                //do_action( 'storefront_footer' );
+                ?>
                 <div class="col-12 col-md-3">
                     <h4 class="mb-6 text-white"><?php bloginfo('name'); ?></h4>
                     <ul class="list-unstyled list-inline mb-7 mb-md-0">

@@ -176,8 +176,8 @@ if( !function_exists( 'dev_get_category' ) ) {
 /**
  * Phân trang
  */
-if( !function_exists( 'dev_pagination' )) {
-    function dev_pagination() {
+if( !function_exists( 'pagination' )) {
+    function pagination() {
         global $wp_query;
 
         $total_pages = $wp_query->max_num_pages;
@@ -202,17 +202,13 @@ if( !function_exists( 'dev_pagination' )) {
         $paginate_links = paginate_links($pagination_args);
 
         if ($paginate_links) {
-            echo '<nav id="post-navigation" class="navigation pagination mt-4 justify-content-center" role="navigation" aria-label="Post Navigation">';
-            echo '<div class="nav-links">';
-            echo '<ul class="page-numbers">';
-            echo '<li>';
+            echo '<nav class="navbar navbar-expand-lg justify-content-center">';
+            echo '<ul class="navbar-nav pagination-sm">';
             foreach ($paginate_links as $link) {
-                $link = str_replace('<a', '<a class="page-numbers"', $link);
-                echo $link;
+                $link = str_replace('<a', '<a class="page-link"', $link);
+                echo '<li class="nav-item page-item">' . $link . '</li>';
             }
-            echo '</li>';
             echo '</ul>';
-            echo '</div>';
             echo '</nav>';
         }
     }

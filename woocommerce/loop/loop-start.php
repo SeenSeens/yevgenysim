@@ -18,6 +18,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+if(is_shop() || is_product_category()) :
 ?>
 <!-- FILTERS -->
 <section class="py-7 border-bottom">
@@ -232,7 +233,8 @@ if ( ! defined( 'ABSPATH' ) ) {
         </div>
     </form>
 </section>
+<?php endif; ?>
 <!-- CONTENT -->
-<section class="py-12" id="product-list">
+<section class="py-6" id="product-list">
     <div class="container">
         <div class="row grid" >

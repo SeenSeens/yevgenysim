@@ -7,6 +7,7 @@ require_once get_theme_file_path('/widgets/includes/product/product/new_product_
 require_once get_theme_file_path('/widgets/includes/product/product/new_product.php');
 require_once get_theme_file_path('/widgets/includes/product/product/new_product_slide_2.php');
 require_once get_theme_file_path('/widgets/includes/product/product/sellers_product.php');
+require_once get_theme_file_path('/widgets/includes/home/features.php');
 
 add_action( 'widgets_init', function() {
     register_widget('categories_fullwidth');
@@ -17,6 +18,7 @@ add_action( 'widgets_init', function() {
     register_widget('new_product_slide_2');
     register_widget('new_product');
     register_widget('sellers_product');
+    register_widget('features');
 });
 
 require_once get_theme_file_path('/widgets/models/functions.php');
